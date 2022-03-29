@@ -1,0 +1,240 @@
+*, *::before, *::after {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  html{
+    overflow-y: scroll;
+  }
+  body {
+    
+    
+    position: relative;
+    min-height: 100vh;
+    
+    
+    /* height: 100%;
+    width: 100%; */
+    
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    line-height: 1.33;
+    letter-spacing: 0.3px;
+  }
+  
+  .home_content {
+    bottom: 30px;
+    position: inherit;
+    /* height: 100%;
+    width: calc(100% - 40px); */
+    left: 100px;
+    background: #fff;
+    padding: 0 20px;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+    
+  }
+  
+  
+  .heading {
+    color: #3dcd58;
+    margin-bottom: 4px;
+    font-size: 35px;
+    margin: 20px 0;
+    text-align: center;
+  }
+  
+  
+  .sidebar {
+    position: fixed;
+    margin: 0px;
+    top: 0;
+    left: 0;
+    height: 20%;
+    width: 35px;
+    background: #f3f2f1;
+    padding: 0px;
+    z-index: 99;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+  }
+  
+  /* .sidebar .logo_content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  } */
+  
+  .sidebar ul {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+  }
+  
+  .sidebar ul li {
+    text-align: center;
+    padding: 8px 0px;
+    cursor: pointer;
+  }
+  
+  .sidebar ul li:hover {
+    background-color: #e7e6e6;
+  }
+  
+  .sidebar ul li:hover .fa {
+    color: #3dcd58;
+  }
+  
+  .sidebar .logo_content .fa {
+    font-size: 18px;
+    color: #676469;
+  }
+  
+  .boxes, .boxes-1 {
+    margin-top: 70px;
+    font-family: Arial, Helvetica, sans-serif;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    
+  }
+  
+  .help-faq{
+    flex-basis: 15%;
+    margin: 0;
+  }
+  .boxes .box,.boxes-1 .box {
+    min-width: 200px;
+    height: 100px;
+    border: 3px solid #3dcd58;
+    padding: 0px 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-right: 25px;
+    margin-left: 25px;
+    line-height: 1.4;
+    margin-bottom: 30px;
+  }
+  .boxes,.boxes-1{
+    margin-right: 50px;
+  }
+  .boxes-1{
+    margin-right:25%;
+    flex:0 0 50%;
+    margin-top:0;
+  }
+  .boxes .box h2,.boxes-1 h2{
+    font-size: 15px;
+    color: #3dcd58;
+    font-weight: 600;
+    -webkit-box-flex: 3;
+        -ms-flex: 3;
+            flex: 3;
+  }
+  
+  .boxes .box a,.boxes-1 .box a {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    font-size: 15px;
+    color: #676469;
+    font-weight: 400;
+    text-decoration: none;
+    cursor: pointer;
+    margin-bottom: 12px;
+  }
+  
+  .boxes .box a:hover, .boxes-1 .box a:hover {
+    text-decoration: underline;
+    color:#3dcd58 !important;
+  }
+  
+  .boxes .box:last-child {
+    background-color: #3dcd58;
+    line-height: 1.5;
+  }
+  
+  .boxes .box:last-child p, .boxes .box:last-child h2, .boxes .box:last-child a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 11px;
+  }
+  
+  .boxes .box:last-child a:hover {
+    text-decoration: underline;
+  }
+  
+  .boxes .box:last-child h2 {
+    font-size: 15px;
+  }
+
+ footer{
+    color: whitesmoke !important;
+    background-color: #28ba44;
+    position: absolute;
+    width: 100%;
+    
+    bottom: 0;
+    margin: 0;
+    padding: 10px;
+} 
+
+  
+
+  footer > a {
+    color: white ;
+  }
+  footer> p{
+    float: right;
+  }
+
+
+  #loading {
+    width: 10rem;
+    height: 10rem;
+    border: 10px solid #f3f3f3;
+    border-top: 11px solid #3dcd58;
+    border-radius: 100%;
+    margin: auto;
+    
+    animation: spin 1s infinite linear;
+    visibility: visible;
+}
+/* #loading.display {
+    visibility: visible;
+} */
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.delete-map-button{
+  color: gray;
+  font-size: medium;
+  
+  padding-left: 150px;
+
+}
+.delete-map-button:hover{
+  color: red;
+  
+}
